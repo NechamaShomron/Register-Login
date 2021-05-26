@@ -1,0 +1,23 @@
+<div class="topnav">
+    <nav>
+        <a routerLink="/register">Register</a>
+        <a routerLink="/login">Login</a>
+    </nav>
+</div>
+<div class="login-container">
+    <form id="formData" #userData="ngForm" (ngSubmit)="onLogin(userData.value)">
+        <h2>Welcome, please login </h2>
+        <div class="input-container">
+            <div class="item">
+                <label>userName:</label>
+                <input placeholder="Enter your user name" name="userName" ngModel>
+            </div>
+            <div class="item">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter Password" name="userPassword" ngModel>
+            </div>
+        </div>
+        <button type="submit">Login</button>
+        <h6>{{messageConfirmation}}</h6>
+    </form>
+</div>
