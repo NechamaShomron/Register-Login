@@ -1,6 +1,9 @@
 # RegisterLogin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+This project is a register-login application. Your registration details are saved to mongoDB and compared when you login.
+**You need to instert your own mongoDB connection url in app.js - I wrote down where in the code!
+
+generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
 ## Development server
 
