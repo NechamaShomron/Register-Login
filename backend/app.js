@@ -9,7 +9,9 @@ require('dotenv/config');
 
 app.use(bodyParser.json()); //makes sure we can work with the response
 
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
+
+//insert your *own* mongodb connection in order to connect to your mongodb 
+mongoose.connect(yourMongoDBconnection, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Connected to database");
     })
@@ -17,8 +19,6 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
         console.log("Connection failed");
     });
 
-
-//makes sure we can work with the response
 
 app.use((req, res, next) => {
     /*
@@ -65,7 +65,7 @@ app.post('/login', (req, res, next) => {
             res.send({ result: "fail" });
         } else {
             let payload = { subject: existingUser._id }
-            let token = jwt.sign(payload, 'secretKey')
+            let token = jwt.sign(payload, process.env.SECRET_KEY);
             res.send({ token });
         }
     })
