@@ -1,7 +1,11 @@
 # RegisterLogin
+This project is a register-login application. Your registration details are saved to mongoDB and compared with when you login.
 
-This project is a register-login application. Your registration details are saved to mongoDB and compared when you login.
-**You need to instert your own mongoDB connection url in app.js - I wrote down where in the code!
+![RegisterLogin - Google Chrome 09_06_2021 13_04_50 (3)](https://user-images.githubusercontent.com/61916187/121335959-be610600-c923-11eb-9483-84d0c27af7f3.png)
+![RegisterLogin - Google Chrome 09_06_2021 13_04_57 (2)](https://user-images.githubusercontent.com/61916187/121335966-bef99c80-c923-11eb-98c8-0b51c75fab01.png)
+![register-login](https://user-images.githubusercontent.com/61916187/121335968-bf923300-c923-11eb-804b-ed52020ba96a.png)
+
+
 
 generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
